@@ -1,0 +1,8 @@
+# Installation
+Added the function from "git-branch-function" to ~/.bashrc
+
+Then, within your "PS1" variable added the called to "($parse_git_branch)" where you want the branch to be displayed.
+
+
+# Examples
+There is a colour and non-colour example in "example"
