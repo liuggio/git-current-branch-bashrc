@@ -1,4 +1,4 @@
 function parse_git_branch {
-    echo $(git branch 2> /dev/null | grep -e '\* ' | sed 's/^..\(.*\)/(\1)/')
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
 
